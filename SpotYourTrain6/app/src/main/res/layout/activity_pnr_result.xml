@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.ishan387.spotyourtrain.PnrResult"
+    android:background="@color/whity">
+
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:contentPadding="2dp"
+        card_view:cardElevation="5dp"
+        android:id="@+id/card"
+        android:visibility="invisible"
+
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+
+            <ImageView
+                android:id="@+id/train"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/trainside"
+                android:padding="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/trainname"
+                android:layout_toRightOf="@+id/train"
+                android:layout_margin="20dp"
+                android:padding="5dp"
+                android:text="CoroMondal Express"
+                android:textColor="@color/red"
+                android:textAllCaps="true"
+                android:textStyle="bold"/>
+            <ImageView
+                android:id="@+id/doj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/calendar"
+                android:padding="5dp"
+                android:layout_below="@+id/train"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23-06-2015"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/date"
+                android:padding="5dp"
+                android:layout_below="@+id/trainname"
+                android:layout_alignLeft="@+id/trainname"
+                android:layout_alignStart="@+id/trainname" />
+            <!--<ImageView
+                android:id="@+id/clas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cls"
+
+                android:padding="2dp"
+
+                android:layout_below="@+id/train"
+                android:layout_toRightOf="@+id/imageView"
+                 />-->
+            <ImageView
+                android:id="@+id/from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/station"
+
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignLeft="@+id/doj" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fromstation"
+                android:text="Bhubneswar"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_alignLeft="@+id/date"
+                android:layout_alignStart="@+id/date"
+               />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:src="@drawable/down"
+                android:id="@+id/imageView"
+
+                android:layout_below="@+id/fromstation"
+                android:layout_toRightOf="@+id/textView"
+                android:layout_toEndOf="@+id/textView" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tostation"
+                android:text="Chennaii"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_alignTop="@+id/imageView2"
+                android:layout_alignLeft="@+id/date"
+
+                android:layout_marginTop="16dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/station"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+
+                android:layout_below="@+id/imageView"
+                android:layout_alignLeft="@+id/from"
+                android:layout_alignStart="@+id/from" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Boarding Point     : "
+                android:textColor="@color/black"
+                android:layout_below="@+id/imageView2"
+                android:layout_alignLeft="@+id/imageView2"
+                android:layout_alignStart="@+id/imageView2"
+                android:id="@+id/textView"
+                android:paddingLeft="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reservation Upto : "
+                android:textColor="@color/black"
+                android:id="@+id/charts"
+                android:layout_below="@+id/textView"
+                android:layout_alignLeft="@+id/textView"
+                android:layout_alignStart="@+id/textView"
+                android:paddingLeft="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chengalpattu (CHL) asaasds das isha"
+                android:textColor="@color/black"
+                android:id="@+id/board"
+
+                android:paddingLeft="2dp"
+
+                android:layout_alignTop="@+id/textView"
+               android:layout_toRightOf="@+id/textView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BBSSS ishan das amlan banagalore"
+                android:textColor="@color/black"
+                android:id="@+id/chrt"
+                android:layout_below="@+id/textView"
+                android:layout_toRightOf="@+id/charts"
+                android:layout_alignLeft="@+id/board"
+                android:paddingLeft="2dp"
+
+
+
+                />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.RecyclerView
+        xmlns:recy="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/passengers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/card"
+        android:padding="2dp"
+        android:background="@drawable/roundrecycle"
+        android:layout_margin="5dp"
+        android:visibility="invisible"
+
+
+
+        />
+
+</RelativeLayout>

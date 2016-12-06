@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/roundrecycle"
+    android:layout_marginBottom="5dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/seat"
+        android:id="@+id/seat"
+        android:padding="2dp"
+
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bookingstatus"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:text="Test 35 gn"
+        android:textAlignment="center"
+       android:layout_alignBaseline="@+id/seat"
+        android:layout_toRightOf="@+id/seat"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:paddingLeft="5dp"
+
+        android:layout_below="@+id/bookingstatus"
+        android:layout_toRightOf="@+id/seat"
+        android:layout_alignLeft="@+id/bookingstatus"
+        android:text="CONFIRMED"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:id="@+id/confirm"
+        android:textColor="@color/black"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:src="@drawable/greensq"
+
+      android:layout_alignParentRight="true"
+        android:id="@+id/confirmcolor"></ImageView>
+
+
+
+
+</RelativeLayout>

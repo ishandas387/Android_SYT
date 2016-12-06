@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Spot Your Train</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_result">Result</string>
+    <string name="banner_ad_unit_id">ca-app-pub-8256904848729072/2521628942</string>
+     <string name="banner_ad_unit_id2">ca-app-pub-8256904848729072/3998362143</string>
+    <!-- test ad-->
+    <!-- <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>-->
+      <string name="banner_ad_unit_id5">ca-app-pub-8256904848729072/5162843340</string>
+    <string name="banner_ad_unit_id3">ca-app-pub-8256904848729072/6986156946</string>
+    <string name="banner_ad_unit_id4"> ca-app-pub-8256904848729072/8462890147</string>
+
+    <string name="banner_ad_unit_id6">ca-app-pub-8256904848729072/4682688547</string>
+    <string name="banner_ad_unit_id7">ca-app-pub-8256904848729072/7496554141</string>
+
+    <string name="title_activity_fav">FavAct</string>
+    <string name="title_activity_http">HttpAct</string>
+    <string name="title_activity_pnr">PnrActivity</string>
+    <string name="title_activity_pnr_result">PnrResult</string>
+    <string name="title_activity_pnrback">pnrback</string>
+
+    <string name="interstitial_ad_sample">Interstitial Ad Sample</string>
+    <string name="start_level">Level 1</string>
+    <string name="next_level">Next Level</string>
+    <!-- -
+        This is an ad unit ID for an interstitial test ad. Replace with your own interstitial ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="title_activity_train_between_stations">TrainBetweenStations</string>
+    <string name="title_activity_tbs_main_page">TbsMainPage</string>
+    <string name="title_activity_route_result">RouteResult</string>
+    <string name="title_activity_seat_avail_result">SeatAvailResult</string>
+    <string name="title_activity_seat_avail_main_page">SeatAvailMainPage</string>
+    <string name="title_activity_within_hour_result">WithinHourResult</string>
+    <string name="title_activity_within_hour_main_page">WithinHourMainPage</string>
+    <string name="title_activity_offline_route_list">OfflineRouteList</string>
+    <string name="title_activity_offline_route_result">OfflineRouteResult</string>
+    <string name="title_activity_offlinetbs">Offlinetbs</string>
+    <string name="title_activity_fragment">Fragment</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+    <string name="title_activity_fmain">Fmain</string>
+
+</resources>

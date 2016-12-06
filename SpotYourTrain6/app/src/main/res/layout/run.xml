@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dip"
+    android:background="@color/white">
+
+    <!-- Station tag-->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Station: "
+        android:textColor="@color/black"
+        />
+
+    <!-- actual arrival tag-->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:text="Actual Arrival: "
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:text="Actual Departure: "
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/scharr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+
+        android:text="Scheduled Arrival: "
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/schdep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/scharr"
+        android:layout_below="@+id/scharr"
+
+        android:text="Scheduled Departure: "
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/region"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/textview6"
+        android:layout_alignLeft="@+id/station"
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+
+        android:text="stat" />
+    <TextView
+        android:id="@+id/station"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_toRightOf="@+id/textView1"
+        android:layout_marginLeft="85dp"
+        android:text="blr junction"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="@color/primary"/>
+x
+    <!-- Acctual depart tag-->
+
+    <!--<TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+
+        android:text="Status: "
+         />-->
+
+    <TextView
+        android:id="@+id/continent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_alignLeft="@+id/station"
+        android:layout_marginLeft="10dp"
+        android:text="actual dept"
+        android:textColor="@color/black"/>
+
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/station"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignLeft="@+id/station"
+        android:layout_marginLeft="10dp"
+
+        android:text="acct ariv"
+        android:textColor="@color/black"/>
+
+
+
+    <TextView
+        android:id="@+id/textview5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/continent"
+        android:layout_toRightOf="@+id/scharr"
+        android:layout_alignLeft="@+id/station"
+        android:layout_marginLeft="10dp"
+        android:text="scc arival"
+        android:textColor="@color/black"/>
+
+
+    <TextView
+        android:id="@+id/textview6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview5"
+        android:layout_toRightOf="@+id/continent"
+        android:layout_alignLeft="@+id/station"
+        android:layout_marginLeft="10dp"
+        android:text="sch dep"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>

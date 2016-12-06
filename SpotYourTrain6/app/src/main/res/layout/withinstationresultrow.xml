@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="2dp"
+    android:layout_marginBottom="1dp"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="@color/grey" android:id="@id/ll">
+        <TextView
+            android:id="@+id/withinrownumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="12345 "
+            android:textStyle="bold"
+
+            android:textColor="@color/white"
+
+            />
+
+
+    </LinearLayout>
+
+    <!-- Station tag-->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_below="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+
+        android:text="Name: "
+        android:textColor="@color/black"
+        />
+
+    <!-- actual arrival tag-->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:text="Actual Arrival: "
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:text="Actual Departure: "
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/scharr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+
+        android:text="Scheduled Arrival: "
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/schdep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/scharr"
+        android:layout_below="@+id/scharr"
+
+        android:text="Scheduled Departure: "
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/withinrowname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="blr junction"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="@color/primary"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1"
+
+        android:layout_marginLeft="100dp"
+        android:layout_marginStart="100dp" />
+    x
+    <!-- Acctual depart tag-->
+
+    <!--<TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+
+        android:text="Status: "
+         />-->
+
+    <TextView
+        android:id="@+id/withinrowaccdep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="actual dept"
+        android:textColor="@color/black"
+        android:layout_above="@+id/withinrowscharr"
+        android:layout_alignLeft="@+id/withinrowscharr"
+        android:layout_alignStart="@+id/withinrowscharr" />
+
+
+
+    <TextView
+        android:id="@+id/withinrowaccaarr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="acct ariv"
+        android:textColor="@color/black"
+        android:layout_above="@+id/withinrowaccdep"
+        android:layout_alignLeft="@+id/withinrowscharr"
+        android:layout_alignStart="@+id/withinrowscharr" />
+
+
+
+    <TextView
+        android:id="@+id/withinrowscharr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="scc arival"
+        android:textColor="@color/black"
+        android:layout_above="@+id/schdep"
+        android:layout_alignLeft="@+id/withinrowname"
+        android:layout_alignStart="@+id/withinrowname" />
+
+
+    <TextView
+        android:id="@+id/withinrowschdep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sch dep"
+        android:textColor="@color/black"
+        android:layout_alignLeft="@+id/withinrowname"
+        android:layout_alignStart="@+id/withinrowname"
+        android:layout_below="@+id/withinrowscharr"
+
+
+
+
+        />
+
+</RelativeLayout>

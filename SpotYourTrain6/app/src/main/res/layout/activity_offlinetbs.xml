@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.ishan387.spotyourtrain.Offlinetbs">
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        card_view:contentPadding="1dp"
+        card_view:cardElevation="10dp"
+        android:id="@+id/ocardtbs"
+        android:visibility="gone"
+
+
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/ofrom" android:text="MysoreadfgdhgghhjjkHFHHHH " android:layout_alignParentLeft="true"
+                android:padding="2dp" android:textColor="@color/black" android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"  android:text="TO" android:layout_centerInParent="true" android:id="@+id/ot"
+                android:layout_below="@+id/ofrom"
+                android:padding="2dp" android:textColor="@color/black"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" android:id="@+id/oto" android:text="Bangalorejhgjgjh hggjugjggjgjgj" android:padding="2dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ot"
+                android:layout_alignParentEnd="true" android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" android:id="@+id/od" android:text="28-07-2015" android:padding="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/oto"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:recy="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/otbst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ocardtbs"
+        android:padding="2dp"
+       />
+
+
+</RelativeLayout>

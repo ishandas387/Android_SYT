@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context="com.ishan387.spotyourtrain.OfflineRouteResult">
+
+    <!--<com.google.android.gms.ads.AdView
+        android:id="@+id/adView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id6"
+
+
+
+        />
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adView6"
+
+
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id7"
+
+
+
+        />-->
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        card_view:contentPadding="1dp"
+        card_view:cardElevation="10dp"
+        android:id="@+id/ocardrouteresult"
+        android:visibility="gone"
+
+
+
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content" android:id="@+id/oroutetrainum" android:text="12345" android:textStyle="bold"  />
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/oroutetrainname" android:text="abc xyz exp" android:textStyle="bold"
+                android:textAllCaps="true" android:layout_below="@+id/oroutetrainum"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/oroutetrainname"
+                android:layout_centerInParent="true"
+                android:id="@+id/otable1"
+                >
+
+                <TableRow android:layout_margin="2dp"
+                    android:background="@drawable/border"
+                    >
+                    <TextView android:text="Sun" android:layout_marginLeft="5dp" />
+                    <TextView android:text="Mon" android:layout_marginLeft="5dp" />
+                    <TextView android:text="Tue" android:layout_marginLeft="5dp" />
+                    <TextView android:text="Wed" android:layout_marginLeft="5dp" />
+                    <TextView android:text="Thu" android:layout_marginLeft="9dp" />
+                    <TextView android:text="Fri" android:layout_marginLeft="9dp" />
+                    <TextView android:text="Sat" android:layout_marginLeft="5dp" />
+                </TableRow>
+                <TableRow android:layout_margin="2dp">
+                    <TextView android:text="Y" android:textStyle="bold" android:layout_marginLeft="10dp" android:padding="1dp" android:id="@+id/ord1" android:textColor="@color/black"/>
+                    <TextView android:text="Y"  android:textStyle="bold" android:layout_marginLeft="10dp" android:padding="1dp" android:id="@+id/ord2" android:textColor="@color/black"/>
+                    <TextView android:text="Y" android:textStyle="bold" android:layout_marginLeft="8dp" android:padding="1dp" android:id="@+id/ord3" android:textColor="@color/black" />
+                    <TextView android:text="Y"  android:textStyle="bold" android:layout_marginLeft="10dp" android:id="@+id/ord4" android:padding="1dp" android:textColor="@color/black"/>
+                    <TextView android:text="Y" android:layout_marginLeft="10dp" android:textStyle="bold" android:id="@+id/ord5" android:padding="1dp" android:textColor="@color/black"/>
+                    <TextView android:text="Y" android:layout_marginLeft="10dp" android:id="@+id/ord6"  android:textStyle="bold" android:padding="1dp" android:textColor="@color/black"/>
+                    <TextView android:text="Y" android:layout_marginLeft="10dp" android:id="@+id/ord7" android:padding="1dp" android:textStyle="bold" android:textColor="@color/black"/>
+                </TableRow>
+            </TableLayout>
+
+            <!--<TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/table1"
+                android:layout_centerInParent="true"
+                android:id="@+id/table2"
+                >
+
+                <TableRow android:layout_margin="2dp"
+                    android:background="@drawable/border"
+                    >
+                    <TextView android:text="2S" android:layout_marginLeft="5dp" />
+                    <TextView android:text="FC" android:layout_marginLeft="8dp" />
+                    <TextView android:text="SL" android:layout_marginLeft="8dp" />
+                    <TextView android:text="2A" android:layout_marginLeft="8dp" />
+                    <TextView android:text="3A" android:layout_marginLeft="8dp" />
+                    <TextView android:text="1A" android:layout_marginLeft="8dp" />
+                    <TextView android:text="CC" android:layout_marginLeft="8dp" />
+                    <TextView android:text="3E" android:layout_marginLeft="8dp" />
+                </TableRow>
+                <TableRow android:layout_margin="2dp">
+                    <TextView android:text="Y" android:textStyle="bold" android:layout_marginLeft="8dp" android:padding="1dp" android:id="@+id/y2s" android:textColor="@color/black"/>
+                    <TextView android:text="Y"  android:textStyle="bold" android:layout_marginLeft="9dp" android:padding="1dp" android:id="@+id/yfc" android:textColor="@color/black"/>
+                    <TextView android:text="Y" android:textStyle="bold" android:layout_marginLeft="8dp" android:padding="1dp" android:id="@+id/ysl" android:textColor="@color/black" />
+                    <TextView android:text="Y"  android:textStyle="bold" android:layout_marginLeft="9dp" android:id="@+id/y2a" android:padding="1dp" android:textColor="@color/black"/>
+                    <TextView android:text="Y" android:layout_marginLeft="9dp" android:textStyle="bold" android:id="@+id/y3a" android:padding="1dp" android:textColor="@color/black"/>
+                    <TextView android:text="Y" android:layout_marginLeft="12dp" android:id="@+id/y1a"  android:textStyle="bold" android:padding="1dp" android:textColor="@color/black"/>
+                    <TextView android:text="Y" android:layout_marginLeft="12dp" android:id="@+id/ycc" android:padding="1dp" android:textStyle="bold" android:textColor="@color/black"/>
+                    <TextView android:text="Y" android:layout_marginLeft="12dp" android:id="@+id/y3e" android:padding="1dp" android:textStyle="bold" android:textColor="@color/black"/>
+                </TableRow>
+            </TableLayout>-->
+
+        </RelativeLayout>
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:recy="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/orouterecycler"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ocardrouteresult"
+
+        android:padding="1dp"
+        android:visibility="gone"
+
+
+
+
+
+
+        />
+
+
+</RelativeLayout>

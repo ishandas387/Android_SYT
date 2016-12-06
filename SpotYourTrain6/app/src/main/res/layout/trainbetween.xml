@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:id="@+id/container"
+
+    android:layout_marginBottom="1dp"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:orientation="horizontal" android:id="@+id/linear" android:layout_marginBottom="2dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:src="@drawable/trainsmall"/>
+
+        <TextView
+            android:layout_width="wrap_content" android:text="12345"
+            android:id="@+id/trainnum"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="4dp"
+
+
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/trainname" android:text="Satabdi Express"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_below="@+id/linear"
+        android:textColor="@color/primary"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:orientation="horizontal"
+        android:id="@+id/l2"
+        android:layout_below="@+id/trainname">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="Departure Time " android:id="@+id/dt"
+        android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/deptime" android:text="7am"
+            android:layout_marginLeft="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/dt"
+            android:layout_toEndOf="@+id/dt"
+            android:layout_marginStart="18dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Arrival Time "
+            android:id="@+id/at"
+            android:layout_below="@+id/dt"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/arrtime" android:text="10:30pm"
+            android:textStyle="bold"
+
+            android:textColor="@color/black"
+            android:layout_below="@+id/deptime"
+            android:layout_alignLeft="@+id/deptime"
+            android:layout_alignStart="@+id/deptime" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/l2"
+        android:layout_centerInParent="true"
+        >
+
+        <TableRow android:layout_margin="2dp"
+            android:background="@drawable/border"
+            >
+            <TextView android:text="Mon" android:layout_marginLeft="5dp" />
+            <TextView android:text="Tue" android:layout_marginLeft="5dp" />
+            <TextView android:text="Wed" android:layout_marginLeft="5dp" />
+            <TextView android:text="Thu" android:layout_marginLeft="5dp" />
+            <TextView android:text="Fri" android:layout_marginLeft="9dp" />
+            <TextView android:text="Sat" android:layout_marginLeft="9dp" />
+            <TextView android:text="Sun" android:layout_marginLeft="5dp" />
+        </TableRow>
+        <TableRow android:layout_margin="2dp">
+            <TextView android:text="Y" android:textStyle="bold" android:layout_marginLeft="8dp" android:padding="1dp" android:id="@+id/d1" android:textColor="@color/black"/>
+            <TextView android:text="Y"  android:textStyle="bold" android:layout_marginLeft="8dp" android:padding="1dp" android:id="@+id/d2" android:textColor="@color/black"/>
+            <TextView android:text="Y" android:textStyle="bold" android:layout_marginLeft="10dp" android:padding="1dp" android:id="@+id/d3" android:textColor="@color/black" />
+            <TextView android:text="Y"  android:textStyle="bold" android:layout_marginLeft="8dp" android:id="@+id/d4" android:padding="1dp" android:textColor="@color/black"/>
+            <TextView android:text="Y" android:layout_marginLeft="8dp" android:textStyle="bold" android:id="@+id/d5" android:padding="1dp" android:textColor="@color/black"/>
+            <TextView android:text="Y" android:layout_marginLeft="12dp" android:id="@+id/d6"  android:textStyle="bold" android:padding="1dp" android:textColor="@color/black"/>
+            <TextView android:text="Y" android:layout_marginLeft="12dp" android:id="@+id/d7" android:padding="1dp" android:textStyle="bold" android:textColor="@color/black"/>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+
+    android:layout_marginBottom="1dp" android:background="@color/white">
+    <!--android:background="@drawable/roundrecycle2"-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:orientation="horizontal" android:id="@+id/linearparent" android:layout_marginBottom="2dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:src="@drawable/trainsmall" android:padding="2dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/primary"
+            android:layout_height="wrap_content"
+            android:id="@+id/routestationame"  android:textAllCaps="true"  android:layout_marginTop="8dp" android:layout_marginLeft="5dp" android:textStyle="bold" android:text="Bangalore"/>
+
+       </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/linearparent2" android:layout_below="@+id/linearparent" >
+    <TextView
+        android:layout_margin="2dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/routeschar" android:layout_alignParentLeft="true" android:text="Scheduled Arrival:"/>
+
+    <TextView
+        android:layout_margin="2dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/routescdep" android:layout_below="@+id/routeschar" android:text="Scheduled Departure:"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent" android:background="@color/whity"
+        android:layout_height="wrap_content" android:id="@+id/linearparent3" android:layout_below="@+id/linearparent2" android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/routehalt" android:text="Halt"  android:layout_margin="2dp"/>
+        <TextView
+            android:textColor="@color/black" android:padding="2dp" android:layout_margin="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/routehaltvalue" android:text="Mins" android:textStyle="bold"/>
+
+        <TextView android:padding="2dp" android:layout_margin="2dp"
+            android:layout_width="wrap_content" android:textColor="@color/black"
+            android:layout_height="wrap_content" android:id="@+id/routedistance" android:text="Distance"/>
+        <TextView android:padding="2dp" android:layout_margin="2dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/routedistancevalue" android:text="68km" android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content" android:id="@+id/routeday"
+        android:padding="3dp"
+        android:layout_below="@+id/linearparent3" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:textStyle="bold" android:text="Day 1"/>
+
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/routeschartime"
+        android:text="10"
+
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/linearparent2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/routescdeptime"
+        android:text="11"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/linearparent2"
+        android:layout_alignLeft="@+id/routeschartime"
+        android:layout_alignStart="@+id/routeschartime" />
+
+</RelativeLayout>
